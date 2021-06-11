@@ -1,0 +1,61 @@
+.btn__box {
+    display: inline-block;
+    @include fFS(19px, 24px, 355px, 610px, 20px);
+    background: $bg-button;
+    font-weight: bold;
+    color: $text-wt;
+    padding: 0.928em 3.937em;
+    margin-bottom: 65px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    @include bp (1024px) {
+        margin-bottom: 19px;
+        padding: 0.541em 2.875em;
+        max-width: 328px;
+                }
+}
+
+.section__btn {
+    @include bp (1024px) {
+        margin-bottom: 0 !important;
+        padding: 13px 0 !important;
+        max-width: 100%;
+                } 
+}
+
+.btn__order {
+    margin-bottom: 0 !important;
+    position: relative;
+    z-index: 2;
+    @include bp (1024px) {
+        margin-top: -2.5rem;
+                    } 
+}
+
+.order__btn {
+    display: none;
+    @include bp (1024px) {
+    display: block;
+                } 
+}
+
+.slider__price-old {
+position: relative;
+}
+
+.slider__price-old::before {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    content: '';
+    border-bottom: 4px solid #ff0000;
+    pointer-events: none;
+}
+
+.btn__promo {
+    max-width: 378px;
+    width: 100%;
+    margin: 0 auto;
+}
